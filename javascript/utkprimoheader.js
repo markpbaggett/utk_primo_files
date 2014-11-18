@@ -71,7 +71,7 @@ $(document).ready(function(){
 
 /* Change One Search logo's anchor */
 $(document).ready(function(){
-$("#exlidHeaderTile > a").first().attr('href','http://utk-primo.hosted.exlibrisgroup.com/primo_library/libweb/action/search.do?menuitem=0&fromTop=true&fromPreferences=false&fromEshelf=false&vid=UTK');
+$("#exlidHeaderTile > a").first().attr('href','http://utk-almaprimo.hosted.exlibrisgroup.com/primo_library/libweb/action/search.do?vid=01UTK');
 });
 
 
