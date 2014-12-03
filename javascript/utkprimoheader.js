@@ -177,3 +177,30 @@ $(document).ready(function(){
 
 });
 
+/* Creating Thumbnails for Islandora */
+$(document).ready(function(){
+	/* Display Thumbnails if they exist */
+	$("span.EXLDetailsLinksTitle > a").each(function(i){
+		var isthumb = $(this).html().trim();
+		if (isthumb == "View Thumbnail"){
+			var thumbvalue = $(this).attr('href');
+			$("span.EXLDetailsLinksTitle").last().append('<img id="islandthumb">');
+			$("#islandthumb").attr("src",thumbvalue);
+			$(this).remove();
+		}
+	});
+	/* Find out if there are any thumbnails */
+	var aretherethumbs = $('#islandthumb').length;
+	if (aretherethumbs == 1){
+	/* If there are thumbs, link them to the original */	
+		$("span.EXLDetailsLinksTitle > a").each(function(i){
+			var isthistheitem = $(this).html().trim();
+			if (isthistheitem == "View Item"){
+				var linktothumb = $(this).attr('href');
+				$("span.EXLDetailsLinksTitle").last().append('<a id="linktothumb"></a>');
+				$("#linktothumb").attr("href",linktothumb);
+				$("#islandthumb").appendTo("#linktothumb");
+			}	
+		});
+	}
+});
