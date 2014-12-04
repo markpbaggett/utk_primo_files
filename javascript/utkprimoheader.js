@@ -197,7 +197,7 @@ $(document).ready(function(){
 			var isthistheitem = $(this).html().trim();
 			if (isthistheitem == "View Item"){
 				var linktothumb = $(this).attr('href');
-				$("span.EXLDetailsLinksTitle").last().append('<a id="linktothumb"></a>');
+				$("span.EXLDetailsLinksTitle").last().append('<a target="_blank" id="linktothumb"></a>');
 				$("#linktothumb").attr("href",linktothumb);
 				$("#islandthumb").appendTo("#linktothumb");
 			}	
