@@ -474,6 +474,33 @@ div#resultsNavNoIdBottom {
 	padding-right: 7em;
 }
 
+/* Mobile View Stuff */
+@media screen and (max-width: 500px){
+	/* Fix Search Bar */
+	#exlidHeaderTile{
+	width:100%;
+	}
+}
+@media screen and (max-width: 1500px){
+	/* Fix Search Bar */
+	#exlidSearchRibbon {
+	margin-top:0em;
+	}
+}
+
+/* Fixing Browse Border */
+.EXLSearchFieldRibbonFormBrowseSearchFor {
+	border:none;
+}
+
+/* Added for About Altmetrics */
+a#altmetrics {
+	padding-left: 5em;
+	padding-bottom: 2em;
+	font-weight: bolder;
+	font-size: 1.5em;
+}
+
 /* Hide the "Subscribe to Library News Feeds" image */
 #exlidSearchBanner {
 	display:none;
