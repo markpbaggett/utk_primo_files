@@ -1,15 +1,15 @@
 /* Adding What am I searching and Sign in to top */
 $(document).ready(function(){
-$( "#exlidMainMenuRibbon" ).prepend( "<li class='EXLMainMenuItem' id='EXLMainMenuItem5'><span><a href='https://utk-almaprimo.hosted.exlibrisgroup.com:443/pds?func=load-login&institute=UTK&calling_system=primo&lang=eng&url=http://utk-almaprimo.hosted.exlibrisgroup.com:80/primo_library/libweb/action/login.do?targetURL=http://utk-almaprimo.hosted.exlibrisgroup.com/primo_library/libweb/action/search.do?menuitem=0&fromTop=true&fromPreferences=false&fromEshelf=false&vid=01UTK' title='Sign in for full search results'>Off-campus users: Sign in</a></span></li>" );
+$( "#exlidMainMenuRibbon" ).prepend( "<li class='EXLMainMenuItem' id='EXLMainMenuItem5'><span><a href='https://utk-almaprimo.hosted.exlibrisgroup.com:443/pds?func=load-login&institute=01UTK&calling_system=primo&lang=eng&url=http://utk-almaprimo.hosted.exlibrisgroup.com:80/primo_library/libweb/action/login.do?targetURL=http://utk-almaprimo.hosted.exlibrisgroup.com/primo_library/libweb/action/search.do?menuitem=0&fromTop=true&fromPreferences=false&fromEshelf=false&vid=01UTK' title='Sign in for full search results'>Off-campus users: Sign in</a></span></li>" );
 $( "#exlidMainMenuRibbon" ).prepend( "<li class='EXLMainMenuItem EXLLastItem' id='EXLMainMenuItem4'><span><a href='http://www.lib.utk.edu/databases/searching.php' target='blank' title='Find out how One Search works'>What am I searching?</a></span></li>" );
 });
 
 /* Added by Mark to Move the Search Items in to position like Edinbugh */
 $(document).ready(function(){
     $(function(){
-		    $(("img[src='../images/logo.png']")).attr('src','../images/searchlogo.png');
+		    $(("img[src='../uploaded_files/01UTK/logo.png']")).attr('src','../uploaded_files/01UTK/searchlogo.png');
 	        $("<div id='markstest'></div>").prependTo("#exlidHeaderContainer");
-	        $("<a href='http://www.lib.utk.edu'><img id='librarylogo' src='../images/utlibrarieslogo.png' alt='UT Libraries Logo'></a>").appendTo("#exlidHeaderTile");
+	        $("<a href='http://www.lib.utk.edu'><img id='librarylogo' src='../uploaded_files/01UTK/utlibrarieslogo.png' alt='UT Libraries Logo'></a>").appendTo("#exlidHeaderTile");
 	    	$("#exlidUserAreaTile").prependTo( $( "#markstest" ) );
 		    $("#exlidMainMenuRibbon").appendTo( $( "#markstest" ) );
 	        $("#markstest").appendTo($("#exlidHeaderTile"));
@@ -91,7 +91,7 @@ $(document).ready(function(){
 
 /* Get rid of Ask Us Now */
 $(document).ready(function(){ 
-	$(("img[src='../images/banner.png']")).attr('id','askusnow');
+	$(("img[src='../uploaded_files/01UTK/banner.png']")).attr('id','askusnow');
 });
 
 /* Hide Sign in when Signed in */
@@ -197,7 +197,7 @@ $(document).ready(function(){
 			var isthistheitem = $(this).html().trim();
 			if (isthistheitem == "View Item"){
 				var linktothumb = $(this).attr('href');
-				$("span.EXLDetailsLinksTitle").last().append('<a target="_blank" id="linktothumb"></a>');
+				$("span.EXLDetailsLinksTitle").last().append('<a id="linktothumb"></a>');
 				$("#linktothumb").attr("href",linktothumb);
 				$("#islandthumb").appendTo("#linktothumb");
 			}	
