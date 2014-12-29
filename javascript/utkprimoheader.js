@@ -208,10 +208,9 @@ $(document).ready(function(){
 /* Change URL for My Account to Automatically Sign In Users */
 $(document).ready(function(){
 	/* Check if User is Signed In */
-	var istheusersignedin = $("#pony2 > a").html().trim();
+	var istheusersignedin = $("#pony2 > a").html();
 	if (istheusersignedin == "Off-campus users: Sign in"){
 		/* If Not, Make MyAccount Run through PDS */
 		$("#exlidMyAccount > a").attr('href','https://utk-almaprimo.hosted.exlibrisgroup.com:443/pds?func=load-login&amp;institute=01UTK&amp;calling_system=primo&amp;lang=eng&amp;url=http://utk-almaprimo.hosted.exlibrisgroup.com:80/primo_library/libweb/action/login.do?targetURL=http://utk-almaprimo.hosted.exlibrisgroup.com/primo_library/libweb/action/myAccountMenu.do?vid=01UTK');
 	}
 });
-	
