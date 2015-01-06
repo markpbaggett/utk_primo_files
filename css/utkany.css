@@ -111,10 +111,7 @@ cite.FRBR a:link, a:visited {
 .EXLResultMediaTYPEvhs .multipleCoverImageContainer {background-image: url(../images/icon_vhs.png);}
 .EXLResultMediaTYPEvideo .multipleCoverImageContainer {background-image: url(../images/icon_streamingvideo.png);}
 .EXLResultMediaTYPEwebsite .multipleCoverImageContainer {background-image: url(../images/icon_www.png);}
-
-
-
-
+.EXLResultMediaTYPElibguide .multipleCoverImageContainer {background-image: url(../images/icon_libguides.png);}
 
 /* Removing FRBR "To view, click on the title of the link to the right */
 .EXLResultSeeFrbrLink {
