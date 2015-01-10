@@ -174,6 +174,9 @@ $(document).ready(function(){
 	
 	/* Rename A to Z Link */
 	$("a.EXLMainMenuITEMATOZ").html("E-journals");
+	/* Change the Link too */
+	$("a.EXLMainMenuITEMATOZ").attr("href","http://utk-almaprimo.hosted.exlibrisgroup.com/primo_library/libweb/action/dlSearch.do?vid=01UTK&institution=01UTK&azSearch=true&fn=almaAzSearch");
+
 
 });
 
